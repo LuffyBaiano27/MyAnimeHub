@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+    <div class="col-md-4">
+        <div class="card shadow-lg border-0">
+            <div class="card-body p-5 text-center">
+                <div class="mb-4">
+                    <i class="fas fa-user-astronaut fa-3x text-info"></i>
+                </div>
+                <h2 class="mb-4 fw-bold text-white">Bem-vindo</h2>
+                
+                <form method="POST">
+                    <div class="mb-3 text-start">
+                        <label class="small text-muted mb-1">Usuário</label>
+                        <input type="text" name="username" class="form-control" placeholder="Seu nick" required>
+                    </div>
+                    <div class="mb-4 text-start">
+                        <label class="small text-muted mb-1">Senha</label>
+                        <input type="password" name="password" class="form-control" placeholder="••••••" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2 mb-3 fw-bold">ENTRAR NO SISTEMA</button>
+                </form>
+                
+                <hr class="border-secondary opacity-25">
+                <p class="mb-0 text-muted small">Ainda não é membro?</p>
+                <a href="{{ url_for('register') }}" class="text-info fw-bold text-decoration-none">Crie sua conta</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

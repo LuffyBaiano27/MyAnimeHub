@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-transparent border-0 pt-4 pb-0">
+                <h4 class="mb-0 fw-bold text-info"><i class="fas fa-edit me-2"></i> Editar Anime</h4>
+            </div>
+            <div class="card-body p-4">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label>Título</label>
+                        <input type="text" name="titulo" value="{{ anime.titulo }}" class="form-control form-control-lg" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label>Gênero</label>
+                        <select name="genero" class="form-select">
+                            <option {% if anime.genero == 'Automático' %}selected{% endif %} value="Automático">Automático (API)</option>
+                            <option {% if anime.genero == 'Shonen' %}selected{% endif %}>Shonen</option>
+                            <option {% if anime.genero == 'Seinen' %}selected{% endif %}>Seinen</option>
+                            <option {% if anime.genero == 'Isekai' %}selected{% endif %}>Isekai</option>
+                            <option {% if anime.genero == 'Romance' %}selected{% endif %}>Romance</option>
+                            <option {% if anime.genero == 'Mecha' %}selected{% endif %}>Mecha</option>
+                            <option {% if anime.genero == 'Terror' %}selected{% endif %}>Terror</option>
+                            <option {% if anime.genero == 'Outro' %}selected{% endif %}>Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label>Episódios</label>
+                        <input type="number" name="episodios" value="{{ anime.episodios if anime.episodios > 0 else '' }}" class="form-control" placeholder="Deixe vazio para auto">
+                        {% if anime.episodios == 0 %}
+                            <small class="text-success fw-bold">Atualmente: Em Lançamento</small>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" class="form-check-input" id="atualizar_auto" name="atualizar_auto" value="1">
+                        <label class="form-check-label" for="atualizar_auto">Tentar buscar Capa/Sinopse novamente (Se o Título mudou).</label>
+                    </div>
+                    
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-success flex-grow-1 fw-bold">SALVAR ALTERAÇÕES</button>
+                        <a href="{{ url_for('index') }}" class="btn btn-outline-light px-4">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
