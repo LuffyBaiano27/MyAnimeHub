@@ -47,7 +47,7 @@ SUGESTOES = [
 
 DESTAQUES = [
     {
-        'titulo': 'ONE PIECE: GEAR 5',
+        'titulo': 'ONE PIECE',
         'desc': 'Acompanhe o ápice da libertação de Luffy!',
         'img': 'https://cdn.observatoriodocinema.com.br/2024/03/luffy-gear-5-1024x571.jpg',
         'link': 'https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece'
@@ -62,7 +62,7 @@ DESTAQUES = [
         'titulo': 'BLEACH: TYBW',
         'desc': 'A guerra sangrenta de mil anos começou.',
         'img': 'https://images5.alphacoders.com/131/1319289.jpeg',
-        'link': 'https://www.disneyplus.com/pt-br/series/bleach-thousand-year-blood-war/44J9a2312a4h' 
+        'link': 'https://www.disneyplus.com/pt-br/browse/entity-571475d5-8b1a-453f-a57f-26bb4dd13304?distributionPartner=google' 
     }
 ]
 
