@@ -56,6 +56,12 @@ O sistema opera com um fluxo de **"Busca e Enriquecimento"**:
 
 Para testar em sua máquina, siga os passos abaixo:
 
+1. Instalar Python 3.10.
+2. Criar ambiente virtual: python -m venv venv
+3. Ativar ambiente: venv\Scripts\activate
+4. Instalar libs: pip install -r requirements.txt
+5. Rodar: python app.py
+
 ### 1. Clone o repositório
 ```bash
 git clone [https://github.com/LuffyBaiano27/MyAnimeHub.git](https://github.com/LuffyBaiano27/MyAnimeHub.git)
