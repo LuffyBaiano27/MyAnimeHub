@@ -1,6 +1,6 @@
 # ⛩️ MyAnimeHub - Sistema de Gestão de Animes
 
-![Status](https://img.shields.io/badge/Status-Online-success?style=flat&logo=python)
+![Status](https://img.shields.io/badge/Status-Offline-success?style=flat&logo=python)
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)
 ![Flask](https://img.shields.io/badge/Framework-Flask-green?style=flat&logo=flask)
 ![Deploy](https://img.shields.io/badge/Deploy-PythonAnywhere-blueviolet?style=flat)
